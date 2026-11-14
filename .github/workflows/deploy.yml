@@ -1,0 +1,38 @@
+name: Website veröffentlichen
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: MkDocs installieren
+        run: pip install -r requirements.txt
+      - name: Website bauen
+        run: mkdocs build --strict
+      - name: GitHub Pages vorbereiten
+        uses: actions/configure-pages@v5
+      - name: Website hochladen
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+      - name: Website veröffentlichen
+        id: deployment
+        uses: actions/deploy-pages@v4

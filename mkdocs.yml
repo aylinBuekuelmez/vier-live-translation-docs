@@ -1,0 +1,37 @@
+site_name: VIER | Live Translation
+site_description: Projektdokumentation zur Evaluation von Sprachmodellen für Live Translation
+# Optional nach Einrichtung einsetzen:
+# site_url: https://USERNAME.github.io/vier-live-translation-docs/
+theme:
+  name: material
+  language: de
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+plugins:
+  - search
+nav:
+  - Startseite: index.md
+  - Projektübersicht: projektuebersicht.md
+  - 'Phase 1 – Modellrecherche':
+      - Überblick: phase-1-modellrecherche/index.md
+      - Auswahlkriterien: phase-1-modellrecherche/auswahlkriterien.md
+      - Longlist: phase-1-modellrecherche/longlist.md
+      - Shortlist: phase-1-modellrecherche/shortlist.md
+  - 'Phase 2 – Kriterien & Testdesign':
+      - Überblick: phase-2-testdesign/index.md
+      - Bewertungsmetriken: phase-2-testdesign/metriken.md
+      - Testplan & Szenarien: phase-2-testdesign/testplan.md
+      - Testkorpus: phase-2-testdesign/testkorpus.md
+  - 'Phase 3 – Evaluierung': phase-3-evaluierung/index.md
+  - 'Phase 4 – Auswertung & Übergabe': phase-4-auswertung/index.md
+  - Projektfortschritt:
+      - Überblick: projektfortschritt/index.md
+      - Sprintberichte: projektfortschritt/sprintberichte.md
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
