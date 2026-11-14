@@ -20,6 +20,8 @@ nav:
       - Auswahlkriterien: phase-1-modellrecherche/auswahlkriterien.md
       - Longlist: phase-1-modellrecherche/longlist.md
       - Shortlist: phase-1-modellrecherche/shortlist.md
+      - Detailrecherchen:
+          - Google Cloud: phase-1-modellrecherche/google-cloud.md
   - 'Phase 2 – Kriterien & Testdesign':
       - Überblick: phase-2-testdesign/index.md
       - Bewertungsmetriken: phase-2-testdesign/metriken.md
