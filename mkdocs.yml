@@ -22,6 +22,8 @@ nav:
       - Shortlist: phase-1-modellrecherche/shortlist.md
       - Detailrecherchen:
           - Google Cloud: phase-1-modellrecherche/google-cloud.md
+          - Deepgram: phase-1-modellrecherche/DeepgramSTT-FluxMultilingual&Nova-3.md
+          - OpenAI GPT Realtime Translate: phase-1-modellrecherche/OpenAI GPT-Realtime-Translate.md
   - 'Phase 2 – Kriterien & Testdesign':
       - Überblick: phase-2-testdesign/index.md
       - Bewertungsmetriken: phase-2-testdesign/metriken.md
